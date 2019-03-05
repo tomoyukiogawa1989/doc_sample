@@ -1,0 +1,35 @@
+
+= SamplePage
+
+include::./attributes.adoc[]
+
+Asciidoc + PlantUML サンプル
+
+== sample構成図
+[plantuml]
+....
+@startuml
+!include <aws/common>
+!include <aws/Storage/AmazonS3/AmazonS3>
+!include <aws/Storage/AmazonS3/bucket/bucket>
+
+AMAZONS3(s3_internal)
+AMAZONS3(s3_partner,"Vendor's S3")
+s3_internal <- s3_partner
+@enduml
+....
+
+=== 前提条件
+....
+# ruby -v
+ruby 2.6.0p0 (2018-12-25 revision 66547) [x86_64-linux]
+# yum install graphviz
+# yum install pandoc
+....
+
+=== Special Thanks
+
+https://github.com/rubyzip/rubyzip
+https://github.com/cawpea/md2html-template-for-pandoc
+
+

@@ -1,0 +1,44 @@
+//==============================================================
+// Attribute / アトリビュート
+//==============================================================
+:appendix-caption: Outline
+:basedir: .
+:caution-caption: CAUTION
+:chapter-label:
+:doctype: book
+:example-caption: Ex.
+:experimental:
+:figure-caption: 図
+:icons: font
+:imagesdir: images
+:imagesoutdir: images
+:important-caption: 重要
+:lang: ja
+:last-update-label: 最終更新
+:listing-caption: リスト
+:manname-title: 名前
+:note-caption: 注記
+:numbered:
+:pdf-fontsdir: resources/fonts
+:pdf-style: public_style.yml
+:pdf-stylesdir: resources/themes
+:preface-title: はじめに
+:sectanchors:
+:sectlinks:
+:sectnumlevels: 5
+:sectnums:
+:table-caption: 表
+:tip-caption: Hint
+:toc-title: 目次
+:toc: left
+:toclevels: 2
+:untitled-label: 無題
+:version-label: バージョン
+:warning-caption: 警告
+//ifdef::backend-pdf[:imagesdir: {imagesoutdir}]
+ifdef::backend-pdf[]
+:source-highlighter: rouge
+endif::[]
+ifdef::backend-html5[]
+:source-highlighter: highlightjs
+endif::[]
